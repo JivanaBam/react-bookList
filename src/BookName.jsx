@@ -6,7 +6,7 @@ const booksNameList = [
   "Death",
   "Karnali Blues",
   "Saya",
-  "The psychology of Monye",
+  "The psychology of Money",
   "The Monk who sold his farafi",
 ];
 const BookName = () => {

@@ -18,7 +18,6 @@ const Book2 = {
 const Book3 = {
   name: "Banyan Moon by Thao Thai (June 13)",
   description: `When Ann Tran gets a call that her beloved grandmother Minh has passed away, she returns home to Florida to face her estranged mother, Huong. There, the two women learn that Minh has left them both Banyan House, the crumbling Gothic manor where Ann grew up. Under the same roof for the first time in years, the mother and daughter attempt to rebuild their relationship without Minh, the one person who’s always held them together.
-
   Running parallel to this is Minh’s story – we watch her grow up in the shadow of the Vietnam war and eventually immigrate to America. Years later, when Ann makes a discovery in Banyan House’s attic, all of Minh’s long-buried secrets come to light. Spanning decades and continents, Banyan Moon tells a story of the things we inherit from our mothers, whether we like it or not. `,
   image:
     "https://thestoryexchange.org/app/uploads/2023/06/IMG_7629-525x792.jpeg",
@@ -27,63 +26,112 @@ const Book3 = {
 const Book4 = {
   name: "The Sunset Crowd by Karin Tanabe (July 4)",
   description: `In this novel, Evra Scott, the daughter of an Oscar-winning director and a Brazilian bombshell actress, is L.A.’s reigning style queen. Currently, she’s romantically linked to famous screenwriter Kai de la Faire.
-
   Meanwhile, Theodora Leigh is fighting to become a movie producer in a town where sex and sexism sell. Luckily, getting ahead by any means necessary is L.A.’s mantra.
-  
   And then there’s Bea Dupont, a photographer for Rolling Stone and Vogue who attends every party. She’s also in love with her oldest friend, Kai de la Faire – yes, Evra’s Kai de la Faire.
-  
   From Rodeo Drive to the French Riviera, this story follows each woman in her pursuit of glory and stardom in a highly competitive setting where some people achieve the American dream and some don’t. And they all learn one truth: it’s about faking it till you make it. `,
   image:
     "https://thestoryexchange.org/app/uploads/2023/06/IMG_7630-525x798.jpeg",
 };
+
+const Book5 = {
+  name: "Karnali Blues by Buddhi Sagar (December 27)",
+  description: `"Karnali Blues" follows the life of the protagonist, Sumnima, and his relationship with his father, Brish Bahadur.
+  The story is narrated from Sumnima’s perspective as he reflects on his childhood and the life of his father. It captures the trials and tribulations of Brish Bahadur, a man with big dreams but limited means, as he moves from one village to another in search of better opportunities.
+  The novel beautifully encapsulates the father-son relationship, marked by moments of tenderness, misunderstanding, and eventual reconciliation. As Sumnima grows, he begins to understand the complexities of his father's life and the sacrifices made for the family. The novel explores themes of love,
+ loss, and the passage of time, illustrating how these experiences shape the bond between parent and child.
+ "Karnali Blues" has been widely acclaimed for its authentic portrayal of rural Nepali life and its emotional resonance. It has struck a chord with readers for its relatable depiction of familial bonds and the universal themes of love and sacrifice. The novel has also contributed significantly to contemporary Nepali literature, garnering praise for its storytelling and linguistic artistry.`,
+  image:
+    "https://m.media-amazon.com/images/I/81nsJCxRcoL._AC_UF1000,1000_QL80_.jpg",
+};
+
 const BooksList = () => {
   return (
-    <div>
-      <div className="book-container">
-        <div className="image-container">
+    <div style={{ width: "90%", marginLeft: "10rem" }}>
+      <div
+        className="wrapper"
+        style={{ display: "flex", flexDirection: "row", gap: "3rem" }}
+      >
+        <div className="image">
           <img src={Book1.image} alt="" />
         </div>
 
-        <div className="book-info">
+        <div
+          className="book-info"
+          // style={{ textAlign: "justify", width: "30%" }}
+        >
           <h3>{Book1.name}</h3>
 
           <p>{Book1.description}</p>
         </div>
       </div>
 
-      <div className="book-container">
-        <div className="book-info">
+      <div
+        className="wrapper-inversed"
+        style={{ display: "flex", flexDirection: "row", gap: "3rem" }}
+      >
+        <div
+          className="book-info"
+          // style={{ textAlign: "justify", width: "30%" }}
+        >
           <h3>{Book2.name}</h3>
 
           <p>{Book2.description}</p>
         </div>
-
-        <div className="image-container">
+        <div className="image">
           <img src={Book2.image} alt="" />
         </div>
       </div>
 
-      <div className="book-container">
-        <div className="image-container">
+      <div
+        className="wrapper"
+        style={{ display: "flex", flexDirection: "row", gap: "3rem" }}
+      >
+        <div className="image">
           <img src={Book3.image} alt="" />
         </div>
 
-        <div className="book-info">
+        <div
+          className="book-info"
+          // style={{ textAlign: "justify", width: "30%" }}
+        >
           <h3>{Book3.name}</h3>
 
           <p>{Book3.description}</p>
         </div>
       </div>
 
-      <div className="book-container">
-        <div className="book-info">
+      <div
+        className="wrapper-inversed"
+        style={{ display: "flex", flexDirection: "row", gap: "3rem" }}
+      >
+        <div
+          className="book-info"
+          // style={{ textAlign: "justify", width: "30%" }}
+        >
           <h3>{Book4.name}</h3>
 
           <p>{Book4.description}</p>
         </div>
-
-        <div className="image-container">
+        <div className="image">
           <img src={Book4.image} alt="" />
+        </div>
+      </div>
+
+      <div
+        className="wrapper"
+        style={{ display: "flex", flexDirection: "row", gap: "3rem" }}
+      >
+        <div className="image">
+          <img src={Book5.image} alt="" />
+        </div>
+
+        <div
+          className="book-info"
+          // style={{ textAlign: "justify", width: "30%" }}
+        >
+          <h3>{Book5.name}</h3>
+
+          <p>{Book5.description}</p>
         </div>
       </div>
     </div>
