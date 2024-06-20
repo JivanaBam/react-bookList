@@ -55,10 +55,7 @@ const BooksList = () => {
           <img src={Book1.image} alt="" />
         </div>
 
-        <div
-          className="book-info"
-          // style={{ textAlign: "justify", width: "30%" }}
-        >
+        <div className="book-info">
           <h3>{Book1.name}</h3>
 
           <p>{Book1.description}</p>
@@ -69,10 +66,7 @@ const BooksList = () => {
         className="wrapper-inversed"
         style={{ display: "flex", flexDirection: "row", gap: "3rem" }}
       >
-        <div
-          className="book-info"
-          // style={{ textAlign: "justify", width: "30%" }}
-        >
+        <div className="book-info">
           <h3>{Book2.name}</h3>
 
           <p>{Book2.description}</p>
@@ -90,10 +84,7 @@ const BooksList = () => {
           <img src={Book3.image} alt="" />
         </div>
 
-        <div
-          className="book-info"
-          // style={{ textAlign: "justify", width: "30%" }}
-        >
+        <div className="book-info">
           <h3>{Book3.name}</h3>
 
           <p>{Book3.description}</p>
@@ -104,10 +95,7 @@ const BooksList = () => {
         className="wrapper-inversed"
         style={{ display: "flex", flexDirection: "row", gap: "3rem" }}
       >
-        <div
-          className="book-info"
-          // style={{ textAlign: "justify", width: "30%" }}
-        >
+        <div className="book-info">
           <h3>{Book4.name}</h3>
 
           <p>{Book4.description}</p>
@@ -125,10 +113,7 @@ const BooksList = () => {
           <img src={Book5.image} alt="" />
         </div>
 
-        <div
-          className="book-info"
-          // style={{ textAlign: "justify", width: "30%" }}
-        >
+        <div className="book-info">
           <h3>{Book5.name}</h3>
 
           <p>{Book5.description}</p>
